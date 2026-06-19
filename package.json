@@ -1,0 +1,42 @@
+{
+  "name": "plant-talk",
+  "version": "0.1.0",
+  "description": "Plant Talk: a houseplant with sensors, a camera, a memory, and a voice — an educational OpenAI API example.",
+  "private": true,
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "dev": "concurrently -n web,api -c cyan,green \"npm:dev:web\" \"npm:dev:api\"",
+    "dev:web": "vite dev",
+    "dev:api": "tsx watch server/index.ts",
+    "build": "vite build",
+    "start": "tsx server/index.ts",
+    "lint": "eslint"
+  },
+  "dependencies": {
+    "@picocss/pico": "^2.1.1",
+    "express": "^5.1.0",
+    "idb-keyval": "^6.2.2",
+    "ogl": "^1.0.11",
+    "openai": "^6.34.0",
+    "react": "19.2.4",
+    "react-dom": "19.2.4",
+    "zod": "^4.3.6",
+    "zustand": "^5.0.12"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9",
+    "@types/express": "^5.0.0",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "@vitejs/plugin-react": "^6.0.1",
+    "concurrently": "^9.1.2",
+    "eslint": "^9",
+    "globals": "^17.6.0",
+    "tsx": "^4.19.3",
+    "typescript": "^5",
+    "typescript-eslint": "^8",
+    "vite": "^8.0.0"
+  }
+}
