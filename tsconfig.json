@@ -1,0 +1,24 @@
+{
+  "include": ["src/**/*.ts", "src/**/*.tsx", "server/**/*.ts", "vite.config.ts"],
+  "exclude": ["node_modules", "dist"],
+  "compilerOptions": {
+    "target": "ES2022",
+    "lib": ["DOM", "DOM.Iterable", "ES2022"],
+    "skipLibCheck": true,
+    "strict": true,
+    "noEmit": true,
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "verbatimModuleSyntax": true,
+    "types": ["vite/client", "node"],
+    "resolveJsonModule": true,
+    "jsx": "react-jsx",
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true,
+    "noUncheckedSideEffectImports": true,
+    "paths": {
+      "@/*": ["./src/*"]
+    }
+  }
+}

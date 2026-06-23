@@ -1,0 +1,25 @@
+# dependencies
+node_modules/
+.pnpm-store/
+
+# build output
+dist/
+build/
+.next/
+coverage/
+
+# local API response logs (see src/lib/api/response-logging.ts)
+logs/
+
+# local Python environments
+.venv/
+
+# env files - never commit your API key
+.env*
+!.env.example
+
+# misc
+.DS_Store
+*.pem
+*.log
+*.tsbuildinfo
